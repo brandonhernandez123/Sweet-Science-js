@@ -1,2 +1,2 @@
-# Sweet-Science-js
-A turn based strategy with a boxing theme
+game title tbd
+A point and click to solve a murder mystery
