@@ -5,14 +5,12 @@
     height: 100px;
     background-color: black;
 }
-body {
-    /* background-color: black; */
-}
+
 
 
 #gameScreen {
-   height: 500px; 
-   width: 600px;
+   height: 600px; 
+   width: 700px;
    border: 2px solid black;
    margin: auto;
    margin-top: 100px;
@@ -27,7 +25,7 @@ body {
     width: 30px;
     background-color: blue;
     border: 2px solid black;
-    margin-top: 340px;
+    margin-top: 435px;
     margin-left: 85px;
 }
 
@@ -57,7 +55,7 @@ margin-top: -70px;
     width: 10px;
     background-color: tan;
     border: 2px solid black;
-    margin-left: 530px;
+    margin-left: 640px;
     margin-top: -30px;
 }
 
@@ -74,7 +72,7 @@ margin-top: -70px;
     width: 50px;
     background-color: lightgreen;
     border: 2px solid black;
-    margin-left: 395px;
+    margin-left: 480px;
     margin-top: -43px;
 }
 
@@ -83,7 +81,7 @@ margin-top: -70px;
     width: 40px;
     background-color: lime;
     border: 2px solid black;
-    margin-left: 555px;
+    margin-left: 655px;
     margin-top: -80px;
 }
 
