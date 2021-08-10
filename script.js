@@ -74,13 +74,69 @@ supportingCharacter.addEventListener('click', function () {
   buttonTwo.style.visibility = `hidden`
   buttonThree.style.visibility = `hidden`
 })
-
+// Clue # 1
 corpse.addEventListener('click', function () {
   text.innerText = `Dr.Reid: Who couldve done this...`
   buttonOne.style.visibility = 'visible'
   buttonOne.innerText = `Examine body`
   buttonOne.addEventListener('click', function () {
     text.innerText = `You see wounds to the heart, abdomen. ‘You learn that the wounds are consistent with a screwdriver”`
+    buttonOne.style.visibility = `hidden`
+  })
+  buttonTwo.innerText = `Check pockets`
+  buttonTwo.style.visibility = 'visible'
+  buttonTwo.addEventListener('click', function () {
+    text.innerText = `You find a movie ticket, pocket candy and a note
+     The note reads - “I had fun with you today, can't wait to see you again - T.D”
+      `
+    buttonTwo.style.visibility = 'hidden'
+  })
+  buttonThree.innerText = `Estimate Time of death`
+  buttonThree.style.visibility = 'visible'
+  buttonThree.addEventListener('click', function () {
+    text.innerText = `“From the looks of it, she has been deceased for approximately three hours”`
+    buttonThree.style.visibility = `hidden`
+  })
+})
+// Clue #2
+purse.addEventListener('click', function () {
+  buttonOne.style.visibility = `visible`
+  buttonOne.innerText = `Search purse`
+  text.innerText = `This must be her purse!`
+  buttonOne.addEventListener('click', function () {
+    text.innerText = `In the purse you find a driver's license that reads the name Nancy Peterson`
+    buttonOne.style.visibility = `hidden`
+    buttonTwo.style.visibility = 'visible'
+    buttonTwo.innerText = `Run Id with dispatch`
+    buttonTwo.addEventListener('click', function () {
+      text.innerText = `Dispatch: “Nancy Peterson has a son named Peter Smith I’m Connecting Him now”`
+      buttonTwo.style.visibility = `hidden`
+      nextButton.style.visibility = `visible`
+      nextButton.addEventListener('click', function () {
+        text.innerText = `Peter: “Hello?”
+          Dr. Reid: “Hi Peter, I am detective Reid”
+          `
+        nextButton.style.visibility = `visible`
+        nextButton.addEventListener('click', function () {
+          text.innerText = `Dr.Reid: “Your mother was found dead today I have some questions for you”`
+          nextButton.style.visibility = `hidden`
+          buttonOne.style.visibility = `visible`
+          buttonTwo.style.visibility = `hidden`
+          buttonThree.style.visibility = `visible`
+          buttonOne.innerText = `When was the last time you saw your mother?`
+          buttonThree.innerText = ` anyone else we can talk to?`
+        })
+      })
+      buttonThree.addEventListener('click', function () {
+        text.innerText = `You can speak to my father, his name is Donald Smith and his number is 555-7932`
+        buttonThree.style.visibility = `hidden`
+      })
+      buttonOne.addEventListener('click', function () {
+        text.innerText = `Peter: We went out to eat about a month ago with my father, It didn't go well they argued and she left the restaurant in tears`
+        buttonOne.style.visibility = `hidden`
+        buttonTwo.style.visibility = `hidden`
+      })
+    })
   })
 })
 
