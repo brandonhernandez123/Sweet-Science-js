@@ -2,7 +2,7 @@
 .dialogue {
     border: 2px solid red;
     color: white;
-    height: 100px;
+    height: 150px;
     background-color: black;
 }
 
@@ -25,8 +25,9 @@
     width: 30px;
     background-color: blue;
     border: 2px solid black;
-    margin-top: 435px;
+    margin-top: 390px;
     margin-left: 85px;
+    cursor: pointer;
 }
 
 
@@ -38,6 +39,7 @@ margin-top: -70px;
     width: 30px;
     background-color: red;
     border: 2px solid black;
+    cursor: pointer;
     
     
 }
@@ -48,6 +50,7 @@ margin-top: -70px;
     background-color: orange;
     margin-left: 325px;
     margin-top: -70px;
+    cursor: pointer;
 }
 
 .clueone {
@@ -55,8 +58,9 @@ margin-top: -70px;
     width: 10px;
     background-color: tan;
     border: 2px solid black;
-    margin-left: 640px;
+    margin-left: 645px;
     margin-top: -30px;
+    cursor: pointer;
 }
 
 .car {
@@ -65,6 +69,7 @@ margin-top: -70px;
     background-color: lightblue;
     border: 3px solid black;
     margin-top: -73px;
+    cursor: pointer;
 }
 
 .corpse {
@@ -74,6 +79,7 @@ margin-top: -70px;
     border: 2px solid black;
     margin-left: 480px;
     margin-top: -43px;
+    cursor: pointer;
 }
 
 .garbage {
@@ -83,6 +89,24 @@ margin-top: -70px;
     border: 2px solid black;
     margin-left: 655px;
     margin-top: -80px;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 70px;
+    display: flexbox;
+    justify-content: space-around;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: red;
+    font-size: 12px;
+    cursor: pointer;
 }
 
 
+.next {
+    margin-left: 180px;
+    height: 35px;   
+    width: 40px;
+}
