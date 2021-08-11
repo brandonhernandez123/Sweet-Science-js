@@ -25,13 +25,15 @@ const gameStart = function () {
   buttonTwo.style.visibility = 'hidden'
   buttonThree.style.visibility = 'hidden'
   nextButton.onclick = function () {
-    text.innerText = `Dr. Reid: “You got here so fast David. Unfortunately we have to meet under these circumstances. I will be your mentor for this case”.`
+    text.innerText = `Dr. Reid: “You got here so fast David. Unfortunately we have to meet under these circumstances. I will be your mentor for this case”.
+    
+    Why Aren't you wearing a tie`
     nextButton.onclick = function () {
-      text.innerText = `David: “I had to get here fast, I didn't want to be late to my first case and leave a bad impression”.`
+      text.innerText = `David: “I had to get here fast, I didn't want to be late to my first case and leave a bad impression”. I didnt want wear a tie over my police uniform, already cracking jokes huh`
       nextButton.onclick = function () {
-        text.innerText = `Dr. Reid: Well You’re doing good so far. Well it’s time to get to work.`
+        text.innerText = `Dr. Reid: *sigh*  it’s time to get to work.`
         nextButton.onclick = function () {
-          text.innerText = `David: “ Alright Mr Reid, You can talk to the officer that first arrived on scene. He is over there towards the exit of the alley setting up the yellow tape.”`
+          text.innerText = `David: “ Alright Mr Reid, You can talk to the officer that first arrived on scene. He is over standing by his car”`
           nextButton.onclick = function () {
             text.innerText = `David: “According to what I was told The old lady was stabbed to death, no Sign of a murder weapon and no proof of identity has been found but we haven’t had the chance to look around yet.`
             nextButton.onclick = function () {
@@ -144,7 +146,7 @@ purse.addEventListener('click', function () {
 
 //Clue # 3
 garbage.addEventListener('click', function () {
-  text.innerText = `Dr.Reid: My favorite part on this... Digging through the trash`
+  text.innerText = `Dr.Reid: My favorite part on this job... Digging through the trash`
   buttonOne.style.visibility = `visible`
   buttonOne.innerText = `Search Garbage`
   buttonOne.addEventListener('click', function () {
@@ -153,10 +155,9 @@ garbage.addEventListener('click', function () {
     buttonOne.style.visibility = `hidden`
     nextButton.addEventListener('click', function () {
       text.innerText = `
-      weapon has been sent over for a DNA evidence check, You have found all the clues in this area.
-        
-      Dr.Reid: “David it’s time for us to go check Ms. Peterson’s home for any clues.”
-        click on the police car to access part 2
+      weapon has been sent over to DNA to be analyzed.
+
+      Dr.Reid: Now that I found the murder weapon I need to see if there is any other clues in this area.
         `
       buttonOne.style.visibility = `hidden`
       buttonThree.style.visibility = `hidden`
