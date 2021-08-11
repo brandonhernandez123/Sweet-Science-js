@@ -12,6 +12,8 @@ const buttonOne = document.querySelector('.button1')
 const buttonTwo = document.querySelector('.button2')
 const buttonThree = document.querySelector('.button3')
 const nextButton = document.querySelector('.next')
+const copCar = document.querySelector('.car')
+console.log(copCar)
 
 let gameActive = false
 
@@ -138,6 +140,33 @@ purse.addEventListener('click', function () {
       })
     })
   })
+})
+
+//Clue # 3
+garbage.addEventListener('click', function () {
+  text.innerText = `Dr.Reid: My favorite part on this... Digging through the trash`
+  buttonOne.style.visibility = `visible`
+  buttonOne.innerText = `Search Garbage`
+  buttonOne.addEventListener('click', function () {
+    text.innerText = `You found a screwdriver that has blood on it, You found the murder weapon!`
+    nextButton.style.visibility = `visible`
+    buttonOne.style.visibility = `hidden`
+    nextButton.addEventListener('click', function () {
+      text.innerText = `
+      weapon has been sent over for a DNA evidence check, You have found all the clues in this area.
+        
+      Dr.Reid: “David it’s time for us to go check Ms. Peterson’s home for any clues.”
+        click on the police car to access part 2
+        `
+      buttonOne.style.visibility = `hidden`
+      buttonThree.style.visibility = `hidden`
+    })
+  })
+})
+
+// access to part 2
+copCar.addEventListener('click', function () {
+  window.location = './part2.html'
 })
 
 clickOfficer()
