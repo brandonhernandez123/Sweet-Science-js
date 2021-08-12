@@ -123,6 +123,12 @@ button {
     width: 40px;
 }
 
+.p2next {
+    margin-left: 390px;
+    height: 35px;   
+    width: 40px;
+}
+
 
 
 
@@ -146,7 +152,7 @@ button {
     border: 2px solid red;
     color: white;
     height: 150px;
-   background-image: url(./sky.gif);
+   background-color: black;
 }
 
 
@@ -185,4 +191,61 @@ background-position: 1200px;
     margin-left: 665px;
     margin-top: -260px;
     cursor: pointer;
+    padding: 0;
 }
+
+.keys {
+    height: 28px;
+    width: 30px;
+    background-image: url(./keys.png);
+    padding: 0;
+    margin-left: 180px;
+    margin-top: -280px;
+    cursor: pointer;
+}
+
+.bedroom {
+    height: 40px;
+    width: 37px;
+    background-color: red;
+    
+    margin-left: 695px;
+    margin-top: -180px;
+    cursor: pointer;
+}
+
+
+
+.photo {
+    height: 40px;
+    width: 37px;
+    background-image: url('./family8bit.png');
+    
+    margin-left: 580px;
+    margin-top: -100px;
+    cursor: pointer;
+}
+
+
+.spaghetti {
+    
+        height: 27px;
+        width: 60px;
+        background-image: url(./spaghetti.png);
+        
+        margin-left: 675px;
+        margin-top: 80px;
+        cursor: pointer;
+    }
+
+
+    .toolbox {
+    
+        height: 41px;
+        width: 90px;
+        background-image: url(./toolbox.png);
+        
+        margin-left: 875px;
+        margin-top: 80px;
+        cursor: pointer;
+    }
