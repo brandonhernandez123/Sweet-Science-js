@@ -205,9 +205,9 @@ background-position: 1200px;
 }
 
 .bedroom {
-    height: 40px;
-    width: 37px;
-    background-color: red;
+    height: 37px;
+    width: 34px;
+    background-image: url(./lock.png);
     
     margin-left: 695px;
     margin-top: -180px;
@@ -247,5 +247,37 @@ background-position: 1200px;
         
         margin-left: 875px;
         margin-top: 80px;
+        cursor: pointer;
+    }
+
+
+    .bloodynote {
+    
+        height: 45px;
+        width: 53px;
+        background-image: url(./bloodynote.png);
+        
+        margin-left: 200px;
+        margin-top: -350px;
+        cursor: pointer;
+    }
+
+    .pantrylock {
+        height: 37px;
+        width: 34px;
+        background-image: url(./lock.png);
+        
+        margin-left: 850px;
+        margin-top: 0px;
+        cursor: pointer;
+    }
+
+    .pantrykey {
+        height: 28px;
+        width: 30px;
+        background-image: url(./keys.png);
+        padding: 0;
+        margin-left: 900px;
+        margin-top: 180px;
         cursor: pointer;
     }
