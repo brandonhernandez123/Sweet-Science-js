@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='style.css'>
+    <title>Murder Mystery Js</title>
+</head>
+<h1>Murder Mystery.JS</h1>
+
+<body> 
+</body>
+<div id = 'basementgameScreen'>
+<header class = 'p2dialogue'>
+    <div class = 'text'> Text</div>
+    <button class = 'p2button1'>Option 1</button>
+    <button class = 'p2button2'>Option 2</button>
+    <button class = 'p2button3'>Option 3</button>
+    <button class = 'p2next'>Next</button>
+</header>
+    <section>
+
+</div>
+<br>
+<div class = 'basementmainChar'></div>
+<br>
+<div class = 'basementdetectivetwo'></div>
+<br>
+<div class = 'basementcorpse'></div>
+<br>
+<div class = 'rollinghead'></div>
+</section>
+
+</div>
+</body>
+<script>
+const reid = document.querySelector('.basementmainChar')
+const basementCorpse = document.querySelector('.basementcorpse')
+const rollingHead = document.querySelector('.rollinghead')
+const david = document.querySelector('.basementdetectivetwo')
+const text = document.querySelector('.text')
+const buttonOne = document.querySelector('.p2button1')
+const buttonTwo = document.querySelector('.p2button2')
+const buttonThree = document.querySelector('.p2button3')
+const nextButton = document.querySelector('.p2next')
+let gameActive = false;
+
+function finaleStart(){
+    gameActive = true;
+    text.innerText = `Reid: David put your gun down what are you doing... what is all of this...`
+    buttonOne.style.visibility = `hidden`
+    buttonTwo.style.visibility = `hidden`
+    buttonThree.style.visibility = `hidden`
+    nextButton.style.visibility = `visible`
+    nextButton.addEventListener('click', function(){
+        text.innerText = `David: This stupid pathetic family gave me away as a child...
+
+        and you are the reason that I wasn't hired at this precinct 5 years ago 
+        it all has to come full circle one way or another!`
+        nextButton.style.visibility = `hidden`
+        buttonOne.style.visibility = `visible`
+        buttonTwo.style.visibility = `visible`
+        buttonOne.innerText = `Let's talk about this David I can help you.`
+        buttonTwo.innerText = `You're fu**ing insanse put the gun down!`
+        buttonOne.addEventListener('click', function(){
+            buttonTwo.style.visibility = `hidden`
+            text.innerText = `What is there to talk about Reid? I stabbed my biological mother to death!
+
+            I Decapitated my brother and put his head on a Piano! `
+            buttonOne.innerText = `put the gun down! let me help you`
+            buttonOne.addEventListener('click', function(){
+                text.innerText = `You think I care? Look how far I've already gotten look around you Reid! You're pathetic! No one will find your body!`
+                buttonOne.innerText = `Attempt to talk him out of it`
+                buttonTwo.style.visibility = `visible`
+                buttonTwo.innerText = `Shoot David`
+                buttonOne.addEventListener('click', function(){
+                    window.location = `./endingloss.html`
+                })
+                buttonTwo.addEventListener('click', function (){
+window.location = `./endingwin.html`
+                })
+            })
+        })
+        buttonTwo.addEventListener('click', function(){
+            buttonOne.style.visibility = `hidden`
+            text.innerText = `You watch who you you're screaming at boy I'm the one with a gun pointed at you!`
+            buttonTwo.innerText = `I'm going to kill you!`
+            buttonTwo.addEventListener('click', function(){
+                window.location = './endingloss.html'
+            })
+        })
+        })
+    }
+finaleStart()
+
+</script>
+</html>
