@@ -1,4 +1,14 @@
 
+.title {
+    text-align: center;
+    color: red;
+    background-color: black;
+}
+body {
+    background-color: black;
+}
+
+
 .dialogue {
     border: 2px solid red;
     color: white;
