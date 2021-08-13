@@ -21,6 +21,7 @@ const gameStart = function () {
   gameActive = true
   text.innerText =
     'The story begins here. It is currently 3 A.M, Dr.Reid arrives at the scene. He is greeted by his new partner David.'
+  nextButton.style.visibility = `visible`
   buttonOne.style.visibility = 'hidden'
   buttonTwo.style.visibility = 'hidden'
   buttonThree.style.visibility = 'hidden'
@@ -49,6 +50,7 @@ const gameStart = function () {
 
 function clickOfficer() {
   policeOfficer.addEventListener('click', function () {
+    nextButton.style.visibility = `hidden`
     text.innerText = `Dr.Reid: “Hey Officer I have some questions for you”.`
     buttonOne.style.visibility = 'visible'
     buttonOne.innerText = `“any identification recovered?”`
@@ -73,12 +75,14 @@ function clickOfficer() {
 }
 
 supportingCharacter.addEventListener('click', function () {
+  nextButton.style.visibility = `hidden`
   text.innerText = `David: “When You’re done looking around, head to the police car so we can go to the next POI”`
   buttonOne.style.visibility = `hidden`
   buttonTwo.style.visibility = `hidden`
   buttonThree.style.visibility = `hidden`
 })
 // Clue # 1
+nextButton.style.visibility = `hidden`
 corpse.addEventListener('click', function () {
   text.innerText = `Dr.Reid: Who couldve done this...`
   buttonOne.style.visibility = 'visible'
@@ -104,6 +108,7 @@ corpse.addEventListener('click', function () {
 })
 // Clue #2
 purse.addEventListener('click', function () {
+  nextButton.style.visibility = `hidden`
   buttonOne.style.visibility = `visible`
   buttonOne.innerText = `Search purse`
   text.innerText = `This must be her purse!`
@@ -146,6 +151,7 @@ purse.addEventListener('click', function () {
 
 //Clue # 3
 garbage.addEventListener('click', function () {
+  nextButton.style.visibility = `hidden`
   text.innerText = `Dr.Reid: My favorite part on this job... Digging through the trash`
   buttonOne.style.visibility = `visible`
   buttonOne.innerText = `Search Garbage`

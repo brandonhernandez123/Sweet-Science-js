@@ -1,5 +1,7 @@
 # Murder Mystery JS
 
+![MurderMysteryJS](./JS.png)
+
 ## Date: 08/13/2021
 
 ### by Brandon Hernandez
@@ -15,28 +17,38 @@ Murder Mystery JS is a point and click thriller/mystery game. You play as the ma
 * CSS
 * Javascript
 * Itch io
+  
   ![Technologies](./htmlcssjsitch.png)
 
 
 ***Getting started***
 
-This is the section that explains how to open up the web page
+Dialogue box is on the top
+Click on other Characters to speak to them
+Responses and Choices will appear in the Dialogue box
+Pay attention to every detail of the story. You will have to make a decision at the end
 
 ***Screenshots***
-##### Puppy
-![puppy](https://www.fourpaws.com/-/media/Images/FourPaws-NA/US/articles/family-matters/puppy-prep-cheat-sheet/puppy-australian-shepherd-running.jpg?la=en&hash=53AAADE06FE29FA96953A32FCEED545C2C8BF6F2)
-##### kitten
-![kitten](https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/tuxedo-kitten-bonnie-j-thompson.jpg)
+##### Intro Screen
+![Intro](./introscreen.png)
+##### Chapter One
+![Chapter2](./Chapteronescreen.png)
 
-##### baby turtle
-![turtle](https://i.pinimg.com/originals/a4/40/9d/a4409d6ef8cde72302baa605d8eedad0.jpg)
+##### Chapter Two
+![Chapter3](./Chapter2screen.png)
 
+***
 ***Future updates***
-- [ ] Future Update 1
-- { } Future Update 2
-- [x] Completed Update
-- {x} ~~Completed update~~
+- [ ] Add walking Animations
+- [ ] Add bonus chapters
+- [ ] Change gamescreen styling
+- [ ] Add Journal to keep clues and passwords
+- [ ] Add action sequences
 
 ***Credits***
 
-Funny Images: [Google](https://www.google.com/)
+Background images: [Google](https://www.google.com/)
+
+Character Assets: [itch.io](itch.io)
+
+For animation assistance: [W3Schools](w2schools.com)

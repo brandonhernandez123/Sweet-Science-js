@@ -47,6 +47,8 @@ function clickKey() {
     text.innerText = `You found the bedroom key`
     keys.style.visibility = `hidden`
     bedroom.style.visibility = `visible`
+    firstButton.style.visibility = `hidden`
+    secondButton.style.visibility = `hidden`
     bedroom.addEventListener('click', function () {
       window.location = `./bedroom.html`
     })
@@ -75,9 +77,14 @@ pasta.addEventListener('click', function () {
 
 photo.addEventListener('click', function () {
   text.innerText = `Its a family portrait but the fathers picture has his face cut out`
+  firstButton.style.visibility = `hidden`
+  secondButton.style.visibility = `hidden`
+  thirdButton.style.visibility = `hidden`
+  nextButton.style.visibility = `hidden`
 })
 
 toolBox.addEventListener('click', function () {
+  secondButton.style.visibility = `hidden`
   text.innerText = `I wonder why there is a toolbox sitting in the middle of the kitchen...`
   firstButton.style.visibility = `visible`
   firstButton.innerText = `Search Toolbox?`
