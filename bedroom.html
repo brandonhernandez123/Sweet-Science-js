@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='style.css'>
+    <title>Murder Mystery Js</title>
+</head>
+<h1>Murder Mystery.JS</h1>
+
+<body> 
+</body>
+<div id = 'roomgameScreen'>
+<header class = 'p2dialogue'>
+    <div class = 'text'> Text</div>
+    <button class = 'p2button1'>Option 1</button>
+    <button class = 'p2button2'>Option 2</button>
+    <button class = 'p2button3'>Option 3</button>
+    <button class = 'p2next'>Next</button>
+</header>
+    <section>
+
+</div>
+<br>
+<div class = 'roommainChar'></div>
+<br>
+<div class = 'roomdetectivetwo'></div>
+<br>
+<div class = 'exit'></div>
+<br>
+<div class = 'laptop'></div>
+<br>
+<div class = 'torturechair'> </div>
+<br>
+<div class = 'floorblood'></div>
+<br>
+<div class = 'keypad'></div>
+<br>
+<div class = 'codenote'></div>
+<div class = 'secondbloodyletter'></div>
+
+</section>
+
+</div>
+</body>
+<script>
+   gameActive = false;
+   const laptop = document.querySelector('.laptop')
+   const chair = document.querySelector('.torturechair')
+   const keyPad = document.querySelector('.keypad')
+   console.log(keyPad)
+   const david = document.querySelector('.roomdetectivetwo')
+const text = document.querySelector('.text')
+const buttonOne = document.querySelector('.p2button1')
+const buttonTwo = document.querySelector('.p2button2')
+const buttonThree = document.querySelector('.p2button3')
+const nextButton = document.querySelector('.p2next')
+const codeNote = document.querySelector('.codenote')
+const bloodLttr = document.querySelector('.secondbloodyletter')
+   function gameStart(){
+       gameActive = true;
+       text.innerText = `Dr.Reid: Who.. is this maniac...
+       
+       David: They obviously tortured someone here`
+       buttonOne.style.visibility = `hidden`
+       buttonTwo.style.visibility = `hidden`
+       buttonThree.style.visibility = `hidden`
+       nextButton.style.visibility = `hidden`
+   }
+
+   david.addEventListener('click', function(){
+      buttonOne.style.visibility = `hidden`
+      buttonTwo.style.visibility = `hidden`
+      buttonThree.style.visibility = `hidden`
+      nextButton.style.visibility = `hidden` 
+    
+    
+    text.innerText = 'David: Hey Reid, there is a keypad here it looks like it leads to the basement.. we need to find that code'
+   })
+
+   keyPad.addEventListener('click', function(){
+       let code = prompt('enter 4 digit code')
+       if(code === '0521') {
+           window.location = './basement.html'
+       } else {
+           alert('incorrect pin')
+       }
+   })
+
+
+   chair.addEventListener('click', function(){
+       text.innerText = `someone was recently tortured...`
+       buttonOne.style.visibility = `visible`
+       buttonOne.innerText = `Examine torture chair`
+       buttonTwo.style.visibility = `visible`
+       buttonTwo.innerText = `search chair?`
+       buttonOne.addEventListener('click', function(){
+           text.innerText = `You can still see flesh on the chair`
+           buttonOne.style.visibility = `hidden`
+       })
+       buttonTwo.addEventListener('click', function(){
+           text.innerText = `You found a note on it with some sort of password it reads: p@55w0rd!`
+           buttonTwo.style.visibility = `hidden`
+       })
+   })
+
+
+   laptop.addEventListener('click', function(){
+      buttonOne.style.visibility = `hidden` 
+    buttonTwo.style.visibility = `hidden`
+    let computer = prompt('Enter Password')
+       if (computer === 'p@55w0rd!') {
+           text.innerText = `Welcome to Nancy's computer!`
+        buttonOne.style.visibility = `visible`
+           buttonOne.innerText = `Check email`
+           buttonTwo.style.visibility = `visible`
+           buttonTwo.innerText = `Check personal files`
+           buttonOne.addEventListener('click', function(){
+               text.innerText = `T.D: Can't wait to see you tonight, nervous never had a blind date before 8hrs ago.
+
+               Donald Smith: Do you still have my Tool box? stop talking bad about me to our son. Don't make me go over there. 10hrs ago
+               `
+               buttonOne.style.visibility = `hidden`
+           } )
+           buttonTwo.addEventListener('click', function(){
+               text.innerText = `You find a screenshot of Donald's messages with a hitman...
+               
+               Reid: Nancy was aware that her ex husband had attempted to hire a hitman to kill her...` 
+               buttonTwo.style.visibility = `hidden`
+           })
+       }
+   })
+   
+
+codeNote.addEventListener('click', function(){
+    text.innerText = `Newspaper dated 05/21.
+    Breaking news: Mother gives birth to child with defects: Sold child for drugs
+    
+    Reid: Poor child... this is up here for a reason... might be a clue`
+})
+
+bloodLttr.addEventListener('click', function(){
+    text.innerText = `If you found this letter I'm assuming you're still trying to figure
+    out Who I am and what I did. I kept Nancy kidnapped here for weeks and tortured her
+    this Family will hurt take my word...`
+})
+
+
+
+
+
+
+
+
+
+   gameStart()
+</script>
+</html>
