@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameOver</title>
+    <style>
+        body {
+            background-image: url(./casefile2.jpeg);
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1 {
+            color:darkred;
+            font-size: 80px;
+            margin-right: 500px;
+            margin-bottom: 100px;
+        }
+        span {
+            color: darkred;
+        }
+        .Replay {
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            font-size: 30px;
+            color: red;
+            background-color: black;
+        
+        }
+        .Replay:hover {
+            background-color:blue;
+            color: white;
+        }
+        .Reid {
+            height: 300px;
+            width: calc(1500px /5);
+            
+            background-image: url(./MaleDetective_GunAim.png);
+            margin-left: 1100px;
+            animation: animate2 1s steps(5) infinite;
+        }
+        @keyframes animate2 {
+    from { background-image: 0;
+
+    }
+    to {
+background-position: 1500px;
+    }
+}
+        
+    </style>
+</head>
+<body>
+  <h1>You Solved the Case</h1>
+  <h2>Detective David: <span>Deceased</span></h2>
+  <p> Case closed as former detective David is taken down by Veteran Reid.</p>
+  <a class = "Replay" href = "./basement.html">Replay Final Chapter</a>
+  <a class = "Replay" href = "./index.html">Chapter Select</a> 
+  
+</body>
+<div class = 'Reid'></div>
+
+</html>
