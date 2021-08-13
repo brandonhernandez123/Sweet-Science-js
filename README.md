@@ -10,6 +10,8 @@
 ***
 ***Description***
 
+Play Game on Surge [Murder Mystery Js](brandonhdzmurdermysteryjs.surge.sh)
+
 Murder Mystery JS is a point and click thriller/mystery game. You play as the main character named detective Reid and are attempting to solve the murder of an innocent old lady. You have a brand new homocide detective named David as your partner for this case. As you progress throughout the story the Details get more gruesome and intense.
 
 ***Technologies Used***
